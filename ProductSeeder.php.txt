@@ -1,0 +1,1000 @@
+// ProductSeeder.php
+
+use Illuminate\Database\Seeder;
+use App\Product;
+
+class ProductSeeder extends Seeder
+{
+    public function run()
+    {
+        Product::create([
+            'ID' => 1,
+            'cat_id' => 111,
+            'name' => 'Komló Amarillo',
+            'price' => 980,
+            'description' => 'Magas alfasavtartalmával az Amarillo kettős célú komló lehet és hozzájárulhat a keserű anyag-adalékhoz, de intenzív gyümölcsös aromái és ízei miatt az aroma komlózás mellett, hideg komlóként is gyakran találkozhatunk vele. Az amerikai pale ale, IPA és Imperial IPA receptúrákban is megtalálható.
+ 
+            Alfa-sav	 8,0-11,0 %
+            Béta-sav	 6,0-7,0 %
+            Aromák	 virágos, citrus és grapefruit
+            Felhasználás	 keserű/aroma
+            Származási hely	 USA
+
+            ',
+            'quantity' => 5,
+            'image' => 'amarillo_komlo_aroma.jpg',
+        ]);
+
+    
+
+         Product::create([
+            'ID' => 2,
+            'cat_id' => 111,
+            'name' => 'Komló Cascade',
+            'price' => 970,
+            'description' => 'Klasszikus komló. Egyetlen más komló sem ismertebb a kézműves sörök körében. A Cascade összetéveszthetetlen karaktere otthonosan mozog a pale ale-ekben, világosokban, búza sörökben, IPA-kban, stoutokban, porterekben... szinte minden amerikai kézműves stílusban. Tökéletesen használható egykomlós receptúrákban is.
+            
+            Alfa-sav	4,5-7,0 %
+            Béta-sav	4,5-7,0 %
+            Aroma	fűszeres, citrusos
+            Felhasználás	inkább aroma de keserű komlóként is használják néha
+            Származási hely	USA
+                        ',
+            'quantity' => 7,
+            'image' => 'cascade_aromajegyek.jpg',
+        ]);
+
+         Product::create([
+            'ID' => 3,
+            'cat_id' => 111,
+            'name' => 'Komló Diamant',
+            'price' => 960,
+            'description' => 'A Diamant fűszeres gyógynövényes karaktert kínál, virágos, citrusos, trópusi gyümölcsök és bogyós gyümölcs aromával.  
+            A Diamant klasszikus komlós aromái rendkívül kedvező ízvilágot alkotnak a láger sörök számára. ""Klasszikus"" német komlókaraktert kínál. A Diamantot úgy fejlesztették ki és tervezték, hogy magasabb olajtartalommal rendelkezzen, és az aromás vegyületek magas átadását kínálja a sörfőzési folyamat során. 
+            Alva-sav	4-7,5 %
+            Béta-sav	3,0-5,0 %
+            Aromák	citrusos, gyümölcsös
+            Felhasználás	keserű/aroma
+            Származási hely	Németország
+
+            ',
+            'quantity' => 10,
+            'image' => '',
+        ]);
+         Product::create([
+            'ID' => 4,
+            'cat_id' => 111,
+            'name' => 'Komló Ekuanot ',
+            'price' => 950,
+            'description' => 'Intenzív és egyedi gyümölcsös és citrusos jegyekkel rendelkezik, beleértve a dinnyét, bogyós gyümölcsöket, citrus lime-ot, almát, papayát, és megjelenik benne a zöldbors fűszeres aromája is. 
+                Alfa.sav	 12-15%
+                Béta-sav	 4.0-5.0%
+                Aromák	 alma, citrus, lime, zöldbors
+                Felhasználás	 aroma
+                Származási hely	 USA
+            ',
+            'quantity' => 5,
+            'image' => 'ekuanot.jpg',
+        ]);
+        Product::create([
+            'ID' => 5,
+            'cat_id' => 111,
+            'name' => 'Komló Mandarina Bavaria',
+            'price' => 980,
+            'description' => '
+                Nagyon kellemes aromákkal rendelkező komló. Finom gyümölcsösség jellemzi jellegzetes mandarin beütéssel.
+                Szeretik alkalmazni az amerikai IPA változataiban, fekete ale-ek, saisons, Brett erjesztések és más sörök esetében, ahol egy határozottan gyümölcsös és erősen komlós karakter előnyös. 
+                Alfa-sav	 7,0-10,0 %
+                Béta-sav	 5,0-6,5 %
+                Aroma	 mandarin, citrus
+                Felhasználás	 aroma
+                Származási hely	Németország
+
+
+
+            ',
+            'quantity' => 5,
+            'image' => 'mandarina.jpg',
+        ]);
+
+        Product::create([
+            'ID' => 6,
+            'cat_id' => 111,
+            'name' => 'Komló Simcoe ',
+            'price' => 990,
+            'description' => '
+                Népszerű amerikai komlófajta. A Simcoe kettős felhasználású komló, keserű komlóként és aroma komlóként is egyaránt használható. Magas alfa-sav tartalma mellett igazán különleges és egyedi aromákkal rendelkezik. 
+                Alfa sav	 12-14%
+                Béta-sav	4.0-5.0%
+                Aromák	maracuja, fenyő, bogyós gyümölcsök
+                Felhasználás	 keserű/aroma
+                Származási hely	 USA
+
+            ',
+            'quantity' => 5,
+            'image' => 'simcoe',
+        ]);
+        Product::create([
+            'ID' => 7,
+            'cat_id' => 111,
+            'name' => 'Komló Tomahawk ',
+            'price' => 975,
+            'description' => '
+                Ezek a komlók gyakorlatilag ugyanazok/nagyon hasonlóak. Amerikában a Yakima-völgyben többen is elkezdték termelni más farmokon ugyanazt a komlót, de máshogy nevezték el. Végül több néven is bejegyeztették. 
+                Intenzív komlósággal és erős aromával rendelkezik, visszafogott citrusos jegyekkel - tökéletes kettős felhasználású komló.  Utóízében gyógynövényes, citromos-citrusos aroma. Számos stílusban használható, különösen az amerikai stílusú sörökben.
+                
+                Alfa-sav	15,0-17,5 %
+                Béta-sav	4,5-6,0 %
+                Aroma	citrus, fűszeres, gyógynövény
+                Felhasználás	keserű/aroma
+                Származási hely	USA
+
+            ',
+            'quantity' => 8,
+            'image' => 'tomahawk.jpg',
+        ]);
+
+
+        Product::create([
+            'ID' => 8,
+            'cat_id' => 112,
+            'name' => 'Maláta Búza',
+            'price' => 750,
+            'description' => '
+                Búza sörök készítéséhez, vagy kiegészítő malátaként használatos. A sörnek nagyon halvány színt ad, viszont intenzív édességet. Ízében, kenyér, karamella, és dió jegyeket lehet felfedezni. A fő különbség a normál búza malátához képest, a habtartás a teljesebb, karakteresebb íz.
+                Nem szokás tisztán használni, javasolt maximális arány 35%.
+                EBC: 4,5
+                Kiszerelés: 1 kg
+
+            ',
+            'quantity' => 12,
+            'image' => 'wheat.jpg',
+        ]);
+              
+
+        Product::create([
+            'ID' => 9,
+            'cat_id' => 112,
+            'name' => 'Maláta Maris Otter ',
+            'price' => 975,
+            'description' => '
+                A maláták királynéja, ha  Pale Ale malátát keresel ettől jobbat nem fogsz találni. Alapmaláta Pale Ale típusú, de nem a nagy üzemi maláta termelés ,és profit terméke. Íze a régi idők minőségét tükrözi vissza,  amikor nem számított a termelékenység és profit, viszont az íz annál jobban. Magja apró szemű, a héja elég erős, és könnyen roppantható. 
+
+                Ez a finom mogyorós, kekszes ízű maláta, sokkal jobb mint az egyéb Pale Ale maláták , melynek színe aranyszínű sörben testesül meg. Kitűnő maláta minden Ale stílusú sör számára.
+
+                Kiszerelés: 1 kg
+
+                EBC: 6
+
+            ',
+            'quantity' => 4,
+            'image' => 'maris.jpg',
+        ]);
+
+        Product::create([
+            'ID' => 10,
+            'cat_id' => 112,
+            'name' => 'Maláta Müncheni ',
+            'price' => 965,
+            'description' => '
+             
+            Müncheni maláta egy láger típusú bázis maláta, amit kiváló minőségű két soros tavaszi árpából készítenek. Nagyon szép borostyán színt ad a sörnek. Testes és intenzív malátás édessége mellett megjelennek a világos karamell, méz és kenyeres karakterek is.
+
+            EBC: 15
+
+
+            ',
+            'quantity' => 6,
+            'image' => 'muncheni.jpg',
+        ]);
+
+        Product::create([
+            'ID' => 11,
+            'cat_id' => 112,
+            'name' => 'Maláta Pale Ale',
+            'price' => 800,
+            'description' => '
+                Pale Ale maláta kiváló minőségű 2 soros tavaszi árpából készül. Az egyik legtöbbet használt maláta, ami szép halvány színt ad a sörnek és komplex malátás aromát, szárított gyümölcs, kenyér és méz karakterrel.
+
+                Kiszerelés: 1kg
+
+                EBC: 6
+
+            ',
+            'quantity' => 10,
+            'image' => 'Pale_ale.jpg',
+        ]);
+
+        Product::create([
+            'ID' => 12,
+            'cat_id' => 112,
+            'name' => 'Maláta Pilseni  ',
+            'price' => 770,
+            'description' => '
+                Pilseni maláta egy láger típusú bázis maláta, amelyet kiváló minőségű 2 soros árpából állítanak elő. Halvány szalmasárga színe és enyhe, édes malátás íze van, amely egy kevés mézes aromával párosul.
+
+                Kiszerelés: 1 kg
+
+                EBC: 3-3,5
+
+
+            ',
+            'quantity' => 6,
+            'image' => 'pils.jpg',
+        ]);
+
+        Product::create([
+            'ID' => 13,
+            'cat_id' => 113,
+            'name' => 'Búzapehely ',
+            'price' => 110,
+            'description' => '
+            A búzapehely kiváló adalékanyaga a búzatípusú söröknek. Nem kell előkezelni, hanem a maláta cefrével együtt bátran lehet főzni.
+            A búzapehely a sör ízéhez és színéhez is hozzájárul. A sörökhöz 20-40%-ban érdemes hozzáadni, mert ezen mennyiség megnövelése esetében szűrés alkalmával könnyen eltömíti a szűrőrendszert.
+            Amennyiben több mennyiséget szeretnénk a maláta cefrénkbe a szűrés zavartalan folyamatához ajánlott rizshéjat használni.
+
+            ',
+            'quantity' => 9,
+            'image' => 'pehely.jpg',
+        ]);
+
+        Product::create([
+            'ID' => 14,
+            'cat_id' => 113,
+            'name' => 'Rizshéj',
+            'price' => 140,
+            'description' => '
+                Egyszerű, és olcsó megoldás a sörlé szűrésének segítésére.
+                Használata ajánlott ha a malátánk porosabb, nagyobb mennyiségű pelyheket, búzát használunk.
+
+                A malátához hozzákeverve érdemes használni. Nem befolyásolja a sör ízét, illatát, színét, habképzését.
+
+                A 1L rizshéj kb 10L sör szűréséhez lesz elegendő.
+
+                Adagolás: 5%
+            ',
+            'quantity' => 6,
+            'image' => 'rizshej.jpg',
+        ]);
+
+        Product::create([
+            'ID' => 15,
+            'cat_id' => 113,
+            'name' => 'Zabpehely',
+            'price' => 200,
+            'description' => '
+                A zabpehely főleg a stoutok, Russian Imperial Stout és New England típusú IPA-khoz javasolt, de minden olyan típushoz jól áll, ahol a selymes kortyérzet és a ködös megjelenés előnyös. 
+                Kiszerelés: 100g 
+            ',
+            'quantity' => 10,
+            'image' => 'zabpehely.jpg',
+        ]);
+
+
+
+
+        Product::create([
+            'ID' => 16,
+            'cat_id' => 114,
+            'name' => 'Sörélesztő Mangrove Jack's M15',
+            'price' => 1110,
+            'description' => '
+                Mangrove Jack's Empire ale sörélesztő
+ 
+                Egy felső erjesztésű ale élesztő, amely számos testes sörhöz alkalmas, kivételes mélységgel. Telt, gazdag, sötét gyümölcsös ízekkel erjed.
+                
+                Alkalmas skót nehéz sörökhöz, amerikai borostyánsörökhöz, édes stoutokhoz és sok máshoz.
+                
+                Erjedés: (70-75%)
+
+                Flokkuláció: Magas ( A flokkuláció az élesztő pelyhesedési képességét jelenti, vagyis azt, hogy az erjedés vége után milyen gyorsan ülepedik le, és mennyire tapad le.)
+                
+                Használati utasítások: Szórja a tartalmat közvetlenül legfeljebb 23 liter sörlébe. A legjobb eredmény elérése érdekében 18-22 C fokon erjeszthető.
+                
+                Tárolási ajánlások: Hűtőben tárolandó.
+
+            ',
+            'quantity' => 7,
+            'image' => 'M15.jpg',
+        ]);
+
+
+
+        Product::create([
+            'ID' => 17,
+            'cat_id' => 114,
+            'name' => 'Sörélesztő Mangrove Jack's M21',
+            'price' => 1200,
+            'description' => '
+               Hagyományos felső erjesztésű élesztő, amely jó egyensúlyt teremt a gyümölcsös észterek és a melegítő fűszeres fenolok között. Az élesztő hagy némi édes ízt a sörben. 
+                Witbier, Grand Cru, fűszeres sörökhöz és más különleges sörökhöz alkalmas. 
+                Erjesztés: Az erjedés mértéke: 1,5 %: Magas (70-75%) 
+                Flokkuláció: Alacsony (A flokkuláció az élesztő pelyhesedési képességét jelenti, vagyis azt, hogy az erjedés vége után milyen gyorsan ülepedik le, és mennyire tapad le.) 
+                Felhasználási útmutató: Szórja közvetlenül legfeljebb 23 liter sörre. A legjobb eredmény elérése érdekében 18-25 C fokon erjedjen. 
+                Tárolási ajánlások: Hűtőben tárolandó 
+
+
+            ',
+            'quantity' => 5,
+            'image' => 'mangrove-jack-m21-belgian-wit.jpg',
+        ]);
+
+
+
+        Product::create([
+            'ID' => 18,
+            'cat_id' => 114,
+            'name' => 'Sörélesztő Mangrove Jack's M31',
+            'price' => 1100,
+            'description' => '
+             A fűszerek, gyümölcsös észterek, fenolok és alkohol fantasztikusan összetett együttesét biztosítja. Emellett nagyon csillapító, magas alkoholtűrő képességgel rendelkezik, így tökéletesen alkalmas számos belga stílushoz. 
+            Alkalmas belga tripel és trappista stílusú sörökhöz. 
+            Erjesztés: Nagyon magas (82-88%)
+
+            Flokkuláció: Közepes (A flokkuláció az élesztő pelyhesedési képességét jelenti, vagyis azt, hogy az erjedés vége után milyen gyorsan ülepedik le, és mennyire tapad le.) 
+            Használati utasítás: Szórja közvetlenül legfeljebb 23 liter sörre. A legjobb eredmény elérése érdekében 18-28 C fokon erjedjen. 
+
+            Tárolási ajánlások: Hűtőben tárolandó 
+
+
+            ',
+            'quantity' => 4,
+            'image' => 'M31.jpg',
+        ]);
+
+
+
+        Product::create([
+            'ID' => 19,
+            'cat_id' => 114,
+            'name' => 'Sörélesztő Mangrove Jack's M36',
+            'price' => 1200,
+            'description' => '
+               Egy felső erjesztésű sörélesztő, amely a komlós és jellegzetes stílusú sörök széles választékához alkalmas. Ez a törzs könnyű, finom gyümölcsös észtereket termel, és segíti a maláta karakter kialakulását. 
+  
+                Alkalmas mind angol, mind amerikai Pale Ales, Extra Special Bitters, Golden Ales és más sörökhöz. 
+                
+                Erjedés: Magas (74-78%) 
+                
+                Flokkuláció: Magas (A flokkuláció az élesztő pelyhesedési képességét jelenti, vagyis azt, hogy az erjedés vége után milyen gyorsan ülepedik le, és mennyire tapad le.) 
+                
+                Felhasználási útmutató: Szórja közvetlenül legfeljebb 23 liter sörre. A legjobb eredmény elérése érdekében 18-23 C fokon erjedjen. 
+                
+                Tárolási ajánlások: Hűtőben tárolandó. 
+
+
+            ',
+            'quantity' => 7,
+            'image' => 'M36.jpg',
+        ]);
+
+
+
+        Product::create([
+            'ID' => 20,
+            'cat_id' => 114,
+            'name' => 'Sörélesztő Mangrove Jack's M47',
+            'price' => 1210,
+            'description' => '
+                Ez az élesztő mérsékelten tolerálja az alkoholt, kevesebb fenolt tartalmaz, mint a belga ale, és rendkívül gyümölcsös, rendkívül összetett észterekkel. 
+  
+                Alkalmas belga világos sörökhöz és apátsági sörökhöz. 
+                
+                Erjedés: kb: Magas (73-77%) 
+                
+                Flokkuláció: Magas (A flokkuláció az élesztő pelyhesedési képességét jelenti, vagyis azt, hogy az erjedés vége után milyen gyorsan ülepedik le, és mennyire tapad le.) 
+                
+                Felhasználási útmutató: Szórja közvetlenül legfeljebb 23 liter sörre. A legjobb eredmény elérése érdekében 18-25 C fokon erjedjen. 
+                
+                Tárolási ajánlások: Hűtőben tárolandó. 
+
+
+            ',
+            'quantity' => 9,
+            'image' => 'M47.jpg',
+        ]);
+
+
+
+        Product::create([
+            'ID' => 21,
+            'cat_id' => 114,
+            'name' => 'Sörélesztő Mangrove Jack's M54',
+            'price' => 1230,
+            'description' => '
+                Egyedülálló láger törzs, amely képes sörhőmérsékleten erjedni a kapcsolódó mellékízek nélkül. Hosszabb erjedési időre sincs szükség. 
+  
+                Alkalmas a California Common és minden olyan lágerhez, amelyet környezeti (ale) hőmérsékleten erjesztenek. 
+                
+                Erjedés: Magas (77-82%) 
+                
+                Flokkuláció: Magas (A flokkuláció az élesztő pelyhesedési képességét jelenti, vagyis azt, hogy az erjedés vége után milyen gyorsan ülepedik le, és mennyire tapad le.) 
+                
+                Felhasználási útmutató: Szórja közvetlenül legfeljebb 23 liter sörre. A legjobb eredmény elérése érdekében 18-20 C fokon erjeszthető. 
+                
+                Tárolási ajánlások: Hűtőben tárolandó. 
+
+            ',
+            'quantity' => 7,
+            'image' => 'M54.jpg',
+        ]);
+
+
+
+        Product::create([
+            'ID' => 22,
+            'cat_id' => 114,
+            'name' => 'Sörélesztő Mangrove Jack's M76',
+            'price' => 1300,
+            'description' => '
+                Lager (alsó erjesztésű) típusú élesztő. Kevesebb ként termel, mint más törzsek. Valamint teltebb malátakaraktert és jól érezhető komló aromát nyújt.
+
+                Megfelelő erjedési hőmérséklete: 8-14°C között.
+                
+                Alkalmas Lager, Pilsner, Helles, Munich Dunkel, Rauchbier és sok más típushoz. 
+                Erjedés: Magas (77-85%) 
+                Flokkuláció: Közepes (A flokkuláció az élesztő pelyhesedési képességét jelenti, vagyis azt, hogy az erjedés vége után milyen gyorsan ülepedik le, és mennyire tapad le.) 
+                Felhasználási útmutató: Szórja a tartalmat közvetlenül legfeljebb 23 litersörlébe. A legjobb eredmény elérése érdekében 8-14°C fokon erjeszthető. 
+                Tárolási ajánlások: Hűtőben tárolandó. 
+
+
+            ',
+            'quantity' => 6,
+            'image' => 'm76.jpg',
+        ]);
+
+
+
+        Product::create([
+            'ID' => 23,
+            'cat_id' => 114,
+            'name' => 'Sörélesztő Safale S-04 ',
+            'price' => 1100,
+            'description' => '
+                A SafAle S-04 egy univerzális felső erjesztésű (ale) élesztő, mely sokoldalúságának köszönhetően igen közkedvelt. Kiváló üledékképző tulajdonságokkal rendelkezik, ezáltal tiszta sörlét eredményez az erjesztés végén. Továbbá gyors és rendkívül hatásos erjesztést biztosít. 1,050-nél nagyobb sűrűségű sörlénél érdemes startert készíteni belőle és azzal elindítani az erjedést.  
+  
+                Erjedési hőmérséklet: 12-25°C 
+                
+                Ideális hőmérséklet: 18-24°C 
+
+
+            ',
+            'quantity' => 8,
+            'image' => '91s04.jpg',
+        ]);
+
+
+
+        Product::create([
+            'ID' => 24,
+            'cat_id' => 115,
+            'name' => 'Sörfőző csomag Mandarina Ale 15L',
+            'price' => 5300,
+            'description' => '
+                Frissítő ,és gyengén komlózott,nyári sör.
+
+                Színe világos, enyhe arany árnyalattal, ízében egy könnyed sör köszön vissza.
+                A Mandarina Bavaria német komló az egyik alapja a sörnek mely gyönyörű mandarinos, citrusos jegyekkel rendelkezik.
+
+                Elkészítése során különösen fontos szerepet játszik a Whirlpool komlózás, ezért kezdőknek a csomagot nem javasoljuk. Itt a komlóforralás végezte után egy plusz komlózást végzünk de nem forralási hőmérsékleten hanem lényegesen alacsonyabb hőfokon. 
+                
+                
+                Sörfőző csomag tartalma
+                Pilseni maláta 	2kg 
+                Müncheni maláta 	1kg 
+                Mandarina bavaria komló 	10g 
+                Mandarina bavaria komló 	10g 
+                Mandarina bavaria komló 	10g 
+                Mandarina bavaria komló 	20g 
+                SafAle US-05 élesztő 	11g 
+                A sörfőző csomag részletes elkészítési leírást tartalmaz,  így elkészítése könnyebb mint gondolnád!
+
+                Típus	Ale
+                Alkoholtartalom	4,8 %
+                Keserűség	23,4 IBU
+                Original Gravity	1.044 SG
+                Final Gravity	1,012 SG
+                Szín	10,6 EBC
+            ',
+            'quantity' => 3,
+            'image' => 'mandarina-ale.jpg',
+        ]);
+
+     Product::create([
+            'ID' => 25,
+            'cat_id' => 115,
+            'name' => 'Sörfőző csomag Müncheni 15L',
+            'price' => 4500,
+            'description' => '
+               Kiváló minőségű száraz és könnyű malátás ízű bajor félbarna sör készíthető a sörfőző csomag segítségével. 
+
+                A Müncheni típusokra jellemzően sokkal malátásabb mint a Cseh típusú sörök.Világos színű, utóíze telt és keserű. 
+                
+                Sörfőző csomag tartalma
+                Müncheni maláta 	3kg 
+                Magnum komló 	10g 
+                Styrian golding komló 	10g 
+                SafAle S-04 élesztő 	6g 
+                A sörfőző csomag részletes elkészítési leírást tartalmaz,  így elkészítése könnyebb mint gondolnád!
+                
+
+                
+                Elkészíthető házisör mennyisége	15L
+                Alkoholtartalom	5,5 %
+            ',
+            'quantity' => 10,
+            'image' => 'muncheni_cs.jpg',
+        ]);
+
+ Product::create([
+            'ID' => 26,
+            'cat_id' => 115,
+            'name' => 'Sörfőző csomag New England Ipa 17L',
+            'price' => 4200,
+            'description' => '
+                Az USA keleti partjáról származó sörstílus, ahol leginkább a komlókon van a hangsúly.
+
+                Ez nem a megszokott Craft IPA. Itt a komló gyümölcsös, virágos vonásai kerülnek előtérbe.  Egy kellemes, testes maláta a Maris Otter adja az alapot. Íze jellegzetes mogyorós és kekszes. Sokkal teltebb, karakteresebb, mint az egyéb Pale Ale maláták.
+
+                Krémes, selymes érzetet ad, de a komló gyümölcsös hatása érdekében rengeteg hideg komló kerül felhasználásra, többek között Mosaic, Cascade és a Citra. Vigyázni kell vele, mert könnyen behízelgi magát, de erős 6,3% alkohol tartalommal rendelkezik  Elkészítése során különösen fontos szerepet játszik a Whirlpool komlózás, ezért kezdőknek a csomagot nem javasoljuk. Itt a komlóforralás végezte után egy plusz komlózást végzünk, de nem forralási hőmérsékleten hanem lényegesen alacsonyabb hőfokon. 
+
+                
+                Sörfőző csomag tartalma
+                Maris Otter maláta 	2250g 
+                Búza maláta 	1150g 
+                Pale Ale maláta 	750g 
+                Búzapehely 	750g 
+                Magnum komló 	15g 
+                Magnum komló 	35g 
+                Cascade komló 	40g 
+                Citra komló 	40g 
+                Mosaic komló 	15g 
+                SafAle US-05 élesztő 	11g 
+                A sörfőző csomag részletes elkészítési leírást tartalmaz,  így elkészítése könnyebb mint gondolnád!
+
+            ',
+            'quantity' => 10,
+            'image' => 'new_england_ipa.jpg',
+        ]);
+
+     Product::create([
+            'ID' => 27,
+            'cat_id' => 115,
+            'name' => 'Sörföző csomag Pilseni 25L',
+            'price' => 4700,
+            'description' => '
+                            
+            Kiváló minőségű száraz és könnyű malátás ízű pilseni sör készíthető a sörfőző csomag segítségével. 
+
+            Főbb jellemzők magas komlótartalom, a hab szinte végig jelen van a fogyasztása alatt. Pilseni színe a legvilágosabb, leginkább az aranyhoz hasonlít, illata kellemesen malátás, játékosan édeskés. Íze az enyhe komlókeserűség mellet kellemesen száraz.
+            Nagyon kellemes ízű házi sör készíthető belőle. A sörfőző csomagot frissen roppantott malátával küldjük.
+            
+            Sörfőző csomag tartalma
+            Pilseni maláta 	5kg 
+            Magnum komló 	20g 
+            Styrian golding komló 	20g 
+            SafAle S-04 élesztő 	10g 
+            A sörfőző csomag részletes elkészítési leírást tartalmaz,  így elkészítése könnyebb mint gondolnád!
+            
+
+            Elkészíthető házisör mennyisége	25L
+            Alkoholtartalom	5,5 %
+            ',
+            'quantity' => 8,
+            'image' => 'pils_25.jpg',
+        ]);
+
+     Product::create([
+            'ID' => 28,
+            'cat_id' => 116,
+            'name' => 'Delux sörfőző szett',
+            'price' => 23000,
+            'description' => '
+                            
+            A Delux szettünket a nagyobb mennyiséget főző vásárlóinknak ajánljuk. A szettben minden megtalálható amire szüksége lehet. 
+            Egyszerű és olcsó, csak a legszükségesebb eszközöket tartalmazza ami szükséges a sör erjesztéséhez és palackozásához. A kotyogó és a csap furata már kialakításra került a tartályon, így csak annyi annyi a dolga hogy a kotyogót beleteszi a tartály tetején látható gumitömítésbe, a csapot pedig a vödör alján található furatba illeszti. A tartály teteje nagyon jól, légmentesen zár. 
+            
+            
+            Tartalma	2 db 30L erjesztő vödör, 2db kotyogó, 2 db műanyag csap. 1db hőmérő matrica, 100db koronazár, 1 db koronazáró, 1 db keverőlapát, 1db sörfokoló, 1db 150ml mérőhenger, 1 db Chemipro fertőtlenítő, 1 db palackozó szifon
+
+            ',
+            'quantity' => 5,
+            'image' => 'erjeszto_vodor_hazisor_30L_deluxe_szett.jpg',
+        ]);
+
+
+     Product::create([
+            'ID' => 29,
+            'cat_id' => 116,
+            'name' => 'Minimál sörfőző szett',
+            'price' => 5500,
+            'description' => '
+                Alap tartozék a házi sörfőzés kedvelőinek.
+                Egyszerű és olcsó, csak a legszükségesebb eszközöket tartalmazza ami szükséges a sör erjesztéséhez és palackozásához. A kotyogó és a csap furata már kialakításra került a tartályon, így csak annyi a dolga hogy a kotyogót beleteszi a tartály tetején látható gumitömítésbe, a csapot pedig a vödör alján található furatba illeszti. A tartály teteje nagyon jól, légmentesen zár.
+                Kezdő szettként inkább ajánljuk a Start vagy Delux szettünket.
+                
+                
+                Tartalma	30L erjesztő vödör, 1db kotyogó, 1 db műanyag csap
+
+            'quantity' => 8,
+            'image' => 'erjeszto_vodor_hazisor_30L.jpg',
+        ]);
+
+
+
+     Product::create([
+            'ID' => 30,
+            'cat_id' => 116,
+            'name' => 'Start Sörfőző szett',
+            'price' => 13300,
+            'description' => '
+                 Alap készlet a házi sörfőzés kedvelőinek. A szett mindent tartalmaz amire a sörfőzés folyamán szükség van.  
+ 
+                Egyszerű és olcsó, csak a legszükségesebb eszközöket tartalmazza ami szükséges a sör erjesztéséhez és palackozásához. A kotyogó és a csap furata már kialakításra került a tartályon, így csak annyi annyi a dolga hogy a kotyogót beleteszi a tartály tetején látható gumitömítésbe, a csapot pedig a vödör alján található furatba illeszti. A tartály teteje nagyon jól, légmentesen zár. 
+  
+
+            ',
+            'quantity' => 10,
+            'image' => 'erjeszto_vodor_hazisor_30L_standard_szett.jpg',
+        ]);
+
+
+// eszközökkel kell folytatni
+
+
+     Product::create([
+            'ID' => 31,
+            'cat_id' => 117,
+            'name' => 'Autómata töltő szifon',
+            'price' => 5000,
+            'description' => '
+                 A tökéletes szifon! Ne pazarolja az idejét egy túl kicsi szifonnal való küszködésre - használja a Brewferm Flow'in-t. A csepegésgátló csatlakozó megakadályozza, hogy a padlója koszossá váljon, és kiküszöböli a higiéniátlan munkakörülményeket. A szifon rögzítőkapoccsal rendelkezik a megfelelő magasság meghatározásához és a hordóhoz való szilárd rögzítéséhez. A Flow'in egy visszacsapószeleppel ellátott üledékszűrővel is rendelkezik a nem kívánt részecskék elkülönítése érdekében.
+ 
+
+                Csepegésgátló gyűjtés
+                Automatikus áramlás
+                Klipsz a stabil rögzítéshez és a magasság szabályozásához
+                Üledékszűrő
+                Palacktöltő mellékelve
+                PVC
+                Élelmiszer minőségű
+                34,5cm
+                Praktikus tárolótáskába csomagolva
+
+
+            ',
+            'quantity' => 5,
+            'image' => 'automatasiphon.jpg',
+        ]);
+
+     Product::create([
+            'ID' => 32,
+            'cat_id' => 117,
+            'name' => 'Félautomata palacktöltő szifon',
+            'price' => 4000,
+            'description' => '
+                Félautomata palack töltő szifon.
+                Sör, bor, és egyéb italok üvegbetöltésére használható.
+                A vastag vezetéket, az erjesztőtartályhoz csatlakoztatjuk.
+                A szifont belenyomjuk az üvegbe.
+                A fekete gomb megnyomásával az ital, belefolyik az üvegbe.
+
+                Amikor a palack tele van, a töltés megáll, és a habot, a vékony csövön, egy másik palacba engedi.
+
+
+
+            ',
+            'quantity' => 5,
+            'image' => 'tolto.jpg',
+        ]);
+
+     Product::create([
+            'ID' => 33,
+            'cat_id' => 118,
+            'name' => 'Professzionális Üzemi Koronazár lezáró',
+            'price' => 20000,
+            'description' => '
+               Professzionális Üzemi Koronazár lezáró   26 és 29mm-es kupakokhoz
+
+            ',
+            'quantity' => 10,
+            'image' => 'profilezaro.jpg',
+        ]);
+
+     Product::create([
+            'ID' => 34,
+            'cat_id' => 118,
+            'name' => 'Söröskupak lezáró 26-29mm Piros VIK Capper',
+            'price' => 8000,
+            'description' => '
+                Söröskupak lezáró 26mm-es és 29mm-es  koronazárakhoz, üvegekhez.
+
+            ',
+            'quantity' => 7,
+            'image' => 'vikcapperpiros.jpg',
+        ]);
+
+     Product::create([
+            'ID' => 35,
+            'cat_id' => 118,
+            'name' => 'Söröskupak lezáró 26mm Fekete Greta',
+            'price' => 7000,
+            'description' => '
+                Söröskupak lezáró 26mm-es koronazárakhoz EURO-1 es üvegekhez
+
+                A dupla peremes üvegeket, nem lehet lezárni vele !!!
+
+            ',
+            'quantity' => 5,
+            'image' => 'kupakolofekete.jpg',
+        ]);
+
+     Product::create([
+            'ID' => 36,
+            'cat_id' => 119,
+            'name' => 'Brew Monk - 30 Literes',
+            'price' => 157000,
+            'description' => '
+                A Brew Monk automata, rozsdamentes acél sörözési rendszer, amellyel 45 liter sör könnyedén készíthető. A programozható vezérlőn keresztül vezérelhető és monitorozható a cefrézési folyamat a digitális kijelzőn. Az integrált állítható rozsdamentes acél maltaszűrőkkel már nincs szükség külön tartályra a szűréshez.
+
+                A 3.000 wattos kapacitással, ami 25% -kal magasabb a piacon lévő jelenlegi készülékeknél, a sörlét gyorsan felforralja.
+                
+                •	kapacitás: 45 liter (teljes térfogat = 52 liter)
+                •	ideális méret: méretek főzővíz H x W = 69 x 35,0 cm
+                •	rozsdamentes acél AISI 304
+                •	Teljesítmény: 100-tól 3.000 W-ig állítható 100 W-os lépésekben
+                •	Az SST malátacsövek akár 8 kg-ot is tartalmazhatnak, állítható SST-képernyőkön és eltávolítható fogantyúval az emeléshez
+                •	beépített SST keringtető cső SST szeleppel az áramlás szabályozásához
+                •	integrált mágneses meghajtású szivattyú külön kezelhető
+                •	programozható vezérlő digitális kijelzővel
+                •	programozhat legfeljebb 9 főzési lépést és legfeljebb 9 hop-kiegészítést
+                •	riasztás / emlékeztető funkció és kézi felülírás funkció
+                •	memória akár 9 recept mentéséhez
+                •	hőmérséklet-tartomány: 25-100 ° C; osztás: 0,1 ° C
+                •	tiszta LCD képernyő
+                •	SST bazooka szűrő
+                •	eltávolítható SST gömbcsap ½ "fúvókával
+                •	üveg fedővel, hogy figyelemmel kísérje a cefrézés folyamatát
+
+
+            ',
+            'quantity' => 3,
+            'image' => 'brewmonk30_1.jpg',
+        ]);
+
+        Product::create([
+            'ID' => 37,
+            'cat_id' => 119,
+            'name' => 'Brew Monk - 50 Literes',
+            'price' => 180000,
+            'description' => '
+              A Brew Monk automata, rozsdamentes acél sörözési rendszer, amellyel 45 liter sör könnyedén készíthető. A programozható vezérlőn keresztül vezérelhető és monitorozható a cefrézési folyamat a digitális kijelzőn. Az integrált állítható rozsdamentes acél maltaszűrőkkel már nincs szükség külön tartályra a szűréshez.
+
+            A 3.000 wattos kapacitással, ami 25% -kal magasabb a piacon lévő jelenlegi készülékeknél, a sörlét gyorsan felforralja.
+            
+            •	kapacitás: 45 liter (teljes térfogat = 52 liter)
+            •	ideális méret: méretek főzővíz H x W = 69 x 35,0 cm
+            •	rozsdamentes acél AISI 304
+            •	Teljesítmény: 100-tól 3.000 W-ig állítható 100 W-os lépésekben
+            •	Az SST malátacsövek akár 8 kg-ot is tartalmazhatnak, állítható SST-képernyőkön és eltávolítható fogantyúval az emeléshez
+            •	beépített SST keringtető cső SST szeleppel az áramlás szabályozásához
+            •	integrált mágneses meghajtású szivattyú külön kezelhető
+            •	programozható vezérlő digitális kijelzővel
+            •	programozhat legfeljebb 9 főzési lépést és legfeljebb 9 hop-kiegészítést
+            •	riasztás / emlékeztető funkció és kézi felülírás funkció
+            •	memória akár 9 recept mentéséhez
+            •	hőmérséklet-tartomány: 25-100 ° C; osztás: 0,1 ° C
+            •	tiszta LCD képernyő
+            •	SST bazooka szűrő
+            •	eltávolítható SST gömbcsap ½ "fúvókával
+            •	üveg fedővel, hogy figyelemmel kísérje a cefrézés folyamatát
+
+
+
+            ',
+            'quantity' => 3,
+            'image' => 'brewmonk_50_2.jpg',
+        ]);
+
+
+
+        Product::create([
+            'ID' => 38,
+            'cat_id' => 119,
+            'name' => 'BGrainfather S40 Autómata Sörfőzőgép',
+            'price' => 250000,
+            'description' => '
+             Grainfather S40 sörfőzőgép
+                Leírás
+                A Grainfather S40 segítségével akár 40L sört is elő tudsz állítani egy főzettel, amivel megtölthetsz 2db 19 literes Corny KEG-et. A rendkívül sokoldalú, magas minőségű, 304-es rozsdamentes acélötvözetből készülő S40 egy egyszerűen használható eszköz, ami biztosítja a gördülékeny főzési folyamatot úgy kezdő mint haladó házisörfőzők számára. Használd a Grainfather alkalmazással együtt, hogy félig automatizált, lépésről lépésre útmutatót kapj a főzés során.
+                Tulajdonságok
+                S40 alapgép magas minőségű, 304 rozsdamentes acélötvözetből készül
+                Könnyen kezelheted a fűtést a háttérvilágítású kijelzővel ellátott digitális vezérlővel
+                A beépített pumpa és a recirkulációs kar maximalizálja a cefre hatékonyságát a recirkulációs infúziós cefre rendszer (RIMS) révén.
+                Egyszerűen hűtheted a sörlevet a rozsdamentes acél merülő hűtővel
+                Meggyőződésünk, hogy az eszközzel professzionális eredményt lehet elérni, mintha egy kraft főzdében lennél. Ezért minden S40-hoz 2 év garancia jár.
+                Mi van a dobozban?
+                Grainfather S40
+                merülő hűtő, hozzá tömlők és csatlakozók
+                beépített pumpa
+                rozsdamentes fedő 
+                malátakosár
+                recirkulációs kar és wort sprayer
+                Specifikáció
+                Méret: 680 x 480mm
+                Súly: 18kg
+                Max forralás előtti mennyiség: 46L
+                Főzetméret: Maximum: 40L; Minimum: 10L
+                Max maláta mennyiség: 10kg 
+                Minimum maláta mennyiség: 5kg
+                Teljesítmény: 2300W, 230V
+                Külső vezérlés: nincs
+
+
+
+            ',
+            'quantity' => 1,
+            'image' => 'graifathers40 001.jpg',
+        ]);
+
+
+
+        Product::create([
+            'ID' => 39,
+            'cat_id' => 119,
+            'name' => 'Grainfather vízmelegítő 18 Literes',
+            'price' => 60000,
+            'description' => '
+             A Grainfather vízmelegítő egy hőszabályozós urna, amely 18 Liter vizet tud felmelegíteni.
+
+            ',
+            'quantity' => 5,
+            'image' => 'grainfathervizmelegito18liter.jpg',
+        ]);
+
+
+
+        Product::create([
+            'ID' => 40,
+            'cat_id' => 120,
+            'name' => '29mm-es koronazár Extra 200db',
+            'price' => 1000,
+            'description' => '
+             Műanyag betétes koronazár, pezsgős üvegek lezárásához. (29mm-es)  Használható Pezsgőüvegekhez, illetve ideiglenes kupakként pezsgő készítéskor
+            200db/csomag
+
+            ',
+            'quantity' => 10,
+            'image' => '29mmsoroskupak.jpg',
+        ]);
+
+
+
+        Product::create([
+            'ID' => 41,
+            'cat_id' => 120,
+            'name' => 'Csatosüveg lezáró Piros',
+            'price' => 120,
+            'description' => '
+             Csatosüveg lezáró Piros gumival ( Csatt ). Minden szabványos Csatosüveghez alkalmas. Újrahasznosítható polietilén dugó. Komplett gumigyűrűvel.
+            ',
+            'quantity' => 200,
+            'image' => 'csatosuveglezaro.jpg',
+        ]);
+
+
+
+        Product::create([
+            'ID' => 42,
+            'cat_id' => 120,
+            'name' => 'Oxigén elnyelő Söröskupak 100 db Ezüst színű',
+            'price' => 900,
+            'description' => '
+             Speciális oxigén elnyelő réteggel bevont söröskupak.
+                Előnyösen használható hoszabb, és rövidebb időre letárolt sörökhöz.
+            ',
+            'quantity' => 10,
+            'image' => 'oxiggggg.jpg',
+        ]);
+
+
+
+        Product::create([
+            'ID' => 43,
+            'cat_id' => 120,
+            'name' => 'Oxigén elnyelő Söröskupak 100 db Komló Mintás',
+            'price' => 900,
+            'description' => '
+             Speciális oxigén elnyelő réteggel bevont söröskupak.
+                Előnyösen használható hoszabb, és rövidebb időre letárolt sörökhöz.
+
+
+            ',
+            'quantity' => 10,
+            'image' => 'komlomintas.jpg',
+        ]);
+
+
+
+        Product::create([
+            'ID' => 44,
+            'cat_id' => 120,
+            'name' => 'Tépőzáras koronazár 50 db',
+            'price' => 1000,
+            'description' => '
+            Tépőzáras koronazár 50 db/csomag Craft Beer felírattal, normál sörösüvegekhez. Sörösüvegek könnyedébb felnyitására készült. Ajánlott azoknak, akik nem szeretnek sörnyitóval vacakolni, illetve akiknek nincs sörnyitója. 
+
+            ',
+            'quantity' => 10,
+            'image' => 'tepozaraskupak.jpg',
+        ]);
+
+
+
+        Product::create([
+            'ID' => 45,
+            'cat_id' => 121,
+            'name' => '0,33L Sörösüveg Stein',
+            'price' => 200,
+            'description' => '
+            0,33L sörösüveg   310g-os  
+            ',
+            'quantity' => 100,
+            'image' => 'steinbottle.jpg',
+        ]);
+
+
+
+        Product::create([
+            'ID' => 46,
+            'cat_id' => 121,
+            'name' => 'NRW CC sörösüveg 0,5L',
+            'price' => 200,
+            'description' => '
+            NRW CC sörösüveg 0,5L
+            ',
+            'quantity' => 100,
+            'image' => 'NRW.jpg',
+        ]);
+
+
+
+        Product::create([
+            'ID' => 47,
+            'cat_id' => 121,
+            'name' => 'Petpalack 0,5 Literes + kupak, arany színű',
+            'price' => 100,
+            'description' => '
+            Kimondottan sör tárolásához készített petpalack.
+            Masszív, fényvédett.
+
+            ',
+            'quantity' => 100,
+            'image' => 'petpalll.jpg',
+        ]);
+
+
+
+        Product::create([
+            'ID' => 48,
+            'cat_id' => 121,
+            'name' => 'Standard IV. Sörösüveg, 0,33L',
+            'price' => 200,
+            'description' => '
+            Műszaki adatok
+            Tartalom	330 ml
+            Szájforma	CC
+            Magasság	164,5 mm
+            Átmérő	64,5 mm
+            Űrtartalom	345 ml
+            Súly	135 gr
+
+            ',
+            'quantity' => 100,
+            'image' => 'ovuveg.jpg',
+        ]);
+
+
+
+    }
+}
